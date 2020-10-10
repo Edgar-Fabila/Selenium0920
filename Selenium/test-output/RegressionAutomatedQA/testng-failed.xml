@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [RegressionAutomatedQA]" guice-stage="DEVELOPMENT">
+  <parameter name="" value=""/>
+  <test parallel="tests" name="TC_02_IncorrectLogin(failed)">
+    <classes>
+      <class name="loginTests.TC_03_Logout">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_Logout -->
+      <class name="loginTests.TC_02_IncorrectLogin">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+          <include name="TC_02"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_IncorrectLogin -->
+      <class name="loginTests.TC_01_CorrectLogin">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_CorrectLogin -->
+    </classes>
+  </test> <!-- TC_02_IncorrectLogin(failed) -->
+  <test parallel="tests" name="TC_03_Logout(failed)">
+    <classes>
+      <class name="loginTests.TC_03_Logout">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+          <include name="TC_03"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_Logout -->
+      <class name="loginTests.TC_02_IncorrectLogin">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_IncorrectLogin -->
+      <class name="loginTests.TC_01_CorrectLogin">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_CorrectLogin -->
+    </classes>
+  </test> <!-- TC_03_Logout(failed) -->
+</suite> <!-- Failed suite [RegressionAutomatedQA] -->
